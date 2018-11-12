@@ -1,0 +1,12 @@
+/*
+ Theme Name:   Go Bananas
+ Description:  This shit is bananas B-A-N-A-N-A-S
+ Template:     twentysixteen
+ Author:       Marty McFly
+*/
+
+.page-template-no-sidebar .content-area{
+  float: none;
+  margin: 0 auto;
+  width: 80%;
+}
