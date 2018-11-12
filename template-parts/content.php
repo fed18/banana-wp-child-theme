@@ -37,6 +37,11 @@
 				'pagelink'    => '<span class="screen-reader-text">' . __( 'Page', 'twentysixteen' ) . ' </span>%',
 				'separator'   => '<span class="screen-reader-text">, </span>',
 			) ); ?>
+			
+			<h3><?php the_field('ripeness'); ?> % Ripeness</h3>
+			<?php if(get_field('organic')): ?>
+				<h3>IT'S ORGANIC!!!!!!!</h3>
+			<?php endif; ?>
 	</div><!-- .entry-content -->
 
 	<footer class="entry-footer">
