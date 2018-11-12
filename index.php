@@ -28,9 +28,13 @@ get_header(); ?>
 			<?php endif; ?>
 
 			<?php
+			$custom_query = new WP_Query([ 
+				'post_type' => 'banana'
+			]);
+
 			// Start the loop.
-			while ( have_posts() ) : the_post();
-			
+			while ( $custom_query->have_posts() ) : $custom_query->the_post();
+				
 				/*
 				 * Include the Post-Format-specific template for the content.
 				 * If you want to override this in a child theme, then include a file
